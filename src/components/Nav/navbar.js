@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.css';
 import { Link } from 'react-scroll';
+import logo from '../../assets/KP.png'; // Ensure the path to your logo is correct
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
     return (
         <nav className="navbar">
-            <img src="./KP.png" alt="Logo" className="navbar-logo" />
+            <img src={logo} alt="Logo" className="navbar-logo" />
             <div className="desktop-menu">
                 <Link className="desktop-menu-list" activeClass='active' to="intro"  smooth={true} offset={-100} spy={true} duration={500}>Home</Link>
                 <Link className="desktop-menu-list" activeClass='active' to="skill" smooth={true} offset={-60} spy={true} duration={500}>About</Link>
