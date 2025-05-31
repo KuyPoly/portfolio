@@ -1,0 +1,131 @@
+#work {
+    position: relative;
+
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.work-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.work-desc {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 3rem;
+    display: block;
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.work-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.work-project {
+    background: #fcf5e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.work-project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(227, 101, 101, 0.2);
+}
+
+.work-img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.work-project-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-project h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: #222;
+}
+
+.work-project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.work-btn {
+    align-self: flex-start;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    margin-top: auto;
+    border: 2px solid black;
+}
+
+.work-btn:hover {
+    background: rgb(227, 101, 101);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .work {
+        padding: 2rem 1.5rem;
+    }
+    
+    .work-projects {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding: 1.5rem 1rem;
+    }
+    
+    .work-projects {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 0;
+    }
+    
+    .work-img {
+        height: 180px;
+    }
+    
+    .work-project-content {
+        padding: 1.25rem;
+    }
+}

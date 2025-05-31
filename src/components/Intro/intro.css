@@ -1,0 +1,123 @@
+#intro {
+    position: relative;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Image stays as background on ALL screen sizes */
+.intro-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.intro-content {
+    width: 100%;
+    padding: 2rem;
+    font-size: clamp(2rem, 5vw, 3rem); /* Fluid font scaling */
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-hello {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.intro-name {
+    color: rgb(227, 101, 101);
+}
+
+.intro-text {
+    font-size: clamp(0.9rem, 1.15vw, 1.15rem);
+    font-weight: 200;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.intro-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    background: #f0efe4;
+    cursor: pointer;
+    font-weight: 600;
+    width: fit-content;
+    transition: all 0.24s ease-in-out;
+}
+
+.intro-btn:hover {
+    background: rgb(227, 101, 101);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Adjustments for tablets */
+@media screen and (max-width: 768px) {
+    .intro-image {
+        max-width: none;
+        width: 100%;
+        right: -20vw;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro-image {
+        max-width: 100vw;
+        width: 73vw;
+        right: 0;
+        object-fit: cover;
+        opacity: 0.78;
+        top: 0;
+    }
+
+    .intro {
+        max-width: none;
+        width: 100vw;
+        height: 100vh; /* Ensures full viewport coverage */
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile adjustments (keeps image as background) */
+@media screen and (max-width: 480px) {
+    .intro {
+        max-width: none;
+        width: 100vw;
+        height: 100vh; /* Ensures full viewport coverage */
+    }
+
+    /* Image fills the entire section */
+    .intro-image {
+        max-width: none;
+        width: 100%;
+        right: 0;
+        object-fit: cover;
+        opacity: 0.78;
+        
+    }
+
+    .intro-text {
+        font-size: 1.3rem;
+    }
+}
+
