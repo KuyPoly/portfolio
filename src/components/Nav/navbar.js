@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import { Link } from 'react-scroll';
-import logo from '../../../public/KP.png' // Ensure this path is correct
+import logo from '../../assets/KP.png' // Ensure this path is correct
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
