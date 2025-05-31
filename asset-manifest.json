@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb21ff6d.css",
-    "main.js": "/portfolio/static/js/main.e2390eca.js",
+    "main.js": "/portfolio/static/js/main.dc3763c1.js",
     "static/media/KuyPoly.png": "/portfolio/static/media/KuyPoly.e54bfd07ae93bad70dc1.png",
     "static/media/fitness.png": "/portfolio/static/media/fitness.34936eb4edc96c57cff4.png",
     "static/media/KFC.png": "/portfolio/static/media/KFC.af7e6ecf352540b50f9f.png",
@@ -10,12 +10,13 @@
     "static/media/backend.png": "/portfolio/static/media/backend.b601d40d58b55d40dfb7.png",
     "static/media/uxui.png": "/portfolio/static/media/uxui.92ec908f03c10de0fbc8.png",
     "static/media/frontend.png": "/portfolio/static/media/frontend.d3b3517ebfc4565a9410.png",
+    "static/media/KP.png": "/portfolio/static/media/KP.a9af5addb922c8f071c7.png",
     "index.html": "/portfolio/index.html",
     "main.eb21ff6d.css.map": "/portfolio/static/css/main.eb21ff6d.css.map",
-    "main.e2390eca.js.map": "/portfolio/static/js/main.e2390eca.js.map"
+    "main.dc3763c1.js.map": "/portfolio/static/js/main.dc3763c1.js.map"
   },
   "entrypoints": [
     "static/css/main.eb21ff6d.css",
-    "static/js/main.e2390eca.js"
+    "static/js/main.dc3763c1.js"
   ]
 }
