@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: "Roboto+Mono", monospace;
+}
+
+body {
+    background: #f0efe4;
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
