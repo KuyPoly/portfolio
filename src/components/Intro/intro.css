@@ -24,7 +24,7 @@
 
 .intro-content {
     width: 100%;
-    padding: 2rem;
+    padding: 10rem;
     font-size: clamp(2rem, 5vw, 3rem); /* Fluid font scaling */
     font-weight: 700;
     display: flex;
@@ -70,21 +70,25 @@
 /* Adjustments for tablets */
 @media screen and (max-width: 768px) {
     .intro-image {
-        max-width: none;
-        width: 100%;
-        right: -20vw;
-        height: 100%;
-    }
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6; /* softer on mobile */
+}
 }
 
 @media screen and (max-width: 600px) {
     .intro-image {
-        max-width: 100vw;
-        width: 73vw;
-        right: 0;
-        object-fit: cover;
-        opacity: 0.78;
-        top: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    opacity: 0.6; /* softer on mobile */
     }
 
     .intro {
@@ -106,14 +110,21 @@
         height: 100vh; /* Ensures full viewport coverage */
     }
 
+    .intro-content {
+        text-align: center;
+        padding: 0;
+    }
+
     /* Image fills the entire section */
     .intro-image {
-        max-width: none;
-        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
         right: 0;
         object-fit: cover;
-        opacity: 0.78;
-        
+        height: 100%;
+        width: 100%;
+        opacity: 0.5; /* softer on mobile */
     }
 
     .intro-text {

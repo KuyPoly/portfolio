@@ -1,7 +1,7 @@
 import React from "react";
 import "./intro.css";
-import { Link } from "react-scroll"; 
-import pic_profile from "../../assets/KuyPoly.png"; // Ensure this path is correct
+
+import pic_profile from "../../assets/id.jpg"; // Ensure this path is correct
 
 const Intro = () => {
     return (
@@ -12,11 +12,11 @@ const Intro = () => {
                     <span className="intro-name"> Kuy Poly</span>
                 </span>
                 <p className="intro-text">I am a Software engineer student who <br /> is passionate about building innovative <br /> solutions and explore the world of technology.</p>
-                <Link>
+                <a href="https://drive.google.com/file/d/1jtSvzyFMGdCQyFlBQFbHQ4i1xrR8a_aC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                     <button className="intro-btn">
-                        Hire Me
+                        Get My CV
                     </button>
-                </Link>
+                </a>
             </div>
             <img src={pic_profile} alt="Profile" className="intro-image" />
         </section>

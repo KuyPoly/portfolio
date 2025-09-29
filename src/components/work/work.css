@@ -79,6 +79,12 @@
     margin-bottom: 1.5rem;
 }
 
+.work-buttons {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: auto;
+}
+
 .work-btn {
     align-self: flex-start;
     padding: 0.6rem 1.25rem;
@@ -87,9 +93,10 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-top: auto;
     border: 2px solid black;
+    background: transparent;
 }
 
 .work-btn:hover {
@@ -118,7 +125,8 @@
     .work-projects {
         grid-template-columns: 1fr;
         gap: 1.25rem;
-        padding: 0;
+        padding: 1rem;
+
     }
     
     .work-img {
@@ -128,4 +136,14 @@
     .work-project-content {
         padding: 1.25rem;
     }
+}
+
+.work-btn.demo {
+    background: rgb(227, 101, 101);
+    color: white;
+    border-color: rgb(227, 101, 101);
+}
+
+.work-btn.demo:hover {
+    background: #c85555;
 }
