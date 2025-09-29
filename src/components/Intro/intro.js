@@ -1,7 +1,7 @@
 import React from "react";
 import "./intro.css";
 
-import pic_profile from "../../assets/id.jpg"; // Ensure this path is correct
+import pic_profile from "../../assets/Pic.png"; // Ensure this path is correct
 
 const Intro = () => {
     return (
